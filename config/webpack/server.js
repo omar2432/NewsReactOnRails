@@ -20,7 +20,7 @@ environment.plugins.insert(
 );
 const serverConfig = merge(environment.toWebpackConfig(), {
   target: 'web',
-  entry: './client/app/bundles/comments/startup/serverRegistration.jsx',
+  entry: './client/app/bundles/stories/startup/serverRegistration.jsx',
   output: {
     filename: 'server-bundle.js',
 

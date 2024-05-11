@@ -1,0 +1,31 @@
+<div id="<%= dom_id story %>">
+<br>
+  <p>
+    <strong>Title:</strong>
+    <%= story.title %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= story.description %>
+  </p>
+
+
+  <p>
+  
+  <% if story.image.attached? %>
+    <%= image_tag story.image %>
+  <% else %>
+    No image attached.
+  <% end %>
+
+  </p>
+
+
+
+
+  <p>
+    <% story.category_id %>
+  </p>
+
+</div>

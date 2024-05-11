@@ -3,6 +3,8 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+gem 'aws-sdk-s3'
+
 ruby "3.1.2"
 
 gem "react_on_rails", "14.0.0"
@@ -112,3 +114,5 @@ end
 
 gem "stimulus-rails", "~> 1.2"
 gem "turbo-rails", "~> 1.4"
+
+gem "devise", "~> 4.9"

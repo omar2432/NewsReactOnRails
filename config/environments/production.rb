@@ -124,4 +124,5 @@ Rails.application.configure do
 
   config.action_cable.url = "wss://#{ENV['PRODUCTION_HOST']}/cable"
   config.action_cable.allowed_request_origins = ["https://#{ENV['PRODUCTION_HOST']}"]
+  #config.action_mailer.default_url_options = { host: 'NOTlocalhost', port: 3000 }
 end

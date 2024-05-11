@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Stories</h1>
+
+<div id="stories">
+  <% @stories.each do |story| %>
+    <%= render story %>
+    <p>
+      <%= link_to "Show this story", story %>
+    </p>
+  <% end %>
+</div>
+
+
+<% if writer_signed_in? %>
+<%= link_to "New story", new_story_path %>
+
+<%= button_to "LOG OUT", destroy_writer_session_path , method: :delete%>
+<% end %>
