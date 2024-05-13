@@ -20,12 +20,17 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
 “/”:
 	
 	-The user can see all the news. 
+
 	-Clicking on a story the user can see its details.
+  
   -The Stories List gets updated with Action Cable. 
-	-When the user presses on Trending he is redirected using ReactRouter to
+	
+  -When the user presses on Trending he is redirected using ReactRouter to
    “/trending” without rerendering the page same goes for Sports and Entertainment.
-	-The number of stories for the current chosen category is available in the header using Redux.
-	-Active Storage is used with Amazon S3 to save and view the Story Images.
+	
+  -The number of stories for the current chosen category is available in the header using Redux.
+	
+  -Active Storage is used with Amazon S3 to save and view the Story Images.
 
 
 
@@ -34,20 +39,29 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
 ## For Newspaper Admins or Writers:
 
 “/stories”:
-	-Has the classic rails generate scaffold view of all the stories.
-	-You can view the stories but not edit or delete them.
+	
+  -Has the classic rails generate scaffold view of all the stories.
+	
+  -You can view the stories but not edit or delete them.
 
 
 “/writers/sign_in”:
-	-A writer can sign in to his account to be able to add or edit the stories.
-	-A writer cannot sign up for a new account (so this is like an admin account for the newsPaper).
-	-writer Credentials:
- 	    *user name: omar.sami@shakacode
-	 	  *Password: shakacode
+	
+  -A writer can sign in to his account to be able to add or edit the stories.
+	
+  -A writer cannot sign up for a new account (so this is like an admin account for the newsPaper).
+	
+  -writer Credentials:
+ 	  
+    user name: omar.sami@shakacode
+	 	
+    Password: shakacode
 
 	-now in “/stories” you can:
-		-Add a new story.
-		-Edit or Delete an existing story.
+		
+    -Add a new story.
+		
+    -Edit or Delete an existing story.
 
 
 
@@ -81,10 +95,14 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
 ## Some of the projects steps and HighLights:
 
 	-added Devise.
-	-added writer with Devise.
-	-added story with scaffold.
-	-added the category model.
-	-made a couple of writer accounts.
+	
+  -added writer with Devise.
+	
+  -added story with scaffold.
+	
+  -added the category model.
+	
+  -made a couple of writer accounts.
   
   -NO one can register a new writer, edited routes.rb:
 
