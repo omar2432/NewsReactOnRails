@@ -149,15 +149,15 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
     -Story.jsx
 
 
-*added and edited the containers:
+* added and edited the containers:
     -NavigationBarContainer.jsx
     
     -RouterStoriesContainer.jsx
 
 
-*added Layout.jsx
+* added Layout.jsx
 
-*In startup added:
+* In startup added:
 
     -NavigationBarApp.jsx
 
