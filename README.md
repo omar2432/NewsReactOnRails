@@ -1,15 +1,15 @@
 
 ## By Omar Sami
 
-based on shakacode's react-webpack-rails-tutorial
-Email: omar.ahmed2432@gmail.com
-Linkedin: https://www.linkedin.com/in/omar-ahmed-sami
+* based on shakacode's react-webpack-rails-tutorial.
+* Email: omar.ahmed2432@gmail.com
+* Linkedin: https://www.linkedin.com/in/omar-ahmed-sami
 
 
 
 
 ## Example of a Simple News Application:
-Using ReactOnRails-Redux-ReactRouter-Action Cable and Active Storage with Amazon S3
+Using ReactOnRails-Redux-ReactRouter-Action Cable and Active Storage with Amazon S3.
 
 Projects github: https://github.com/omar2432/NewsReactOnRails
 
@@ -21,12 +21,11 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
 	
 	-The user can see all the news. 
 	-Clicking on a story the user can see its details.
-  -The Stories List gets updated with Action Cable 
+  -The Stories List gets updated with Action Cable. 
 	-When the user presses on Trending he is redirected using ReactRouter to
-   “/trending” without rerendering the page same goes for Sports and Entertainment
-	-The number of stories for the current chosen category is available in the header
-   using Redux
-	-Active Storage is used with Amazon S3 to save and view the Story Images
+   “/trending” without rerendering the page same goes for Sports and Entertainment.
+	-The number of stories for the current chosen category is available in the header using Redux.
+	-Active Storage is used with Amazon S3 to save and view the Story Images.
 
 
 
@@ -35,20 +34,20 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
 ## For Newspaper Admins or Writers:
 
 “/stories”:
-	-Has the classic rails generate scaffold view of all the stories
-	-You can view the stories but not edit or delete them
+	-Has the classic rails generate scaffold view of all the stories.
+	-You can view the stories but not edit or delete them.
 
 
 “/writers/sign_in”:
-	-A writer can sign in to his account to be able to add or edit the stories
-	-A writer cannot sign up for a new account (so this is like an admin account for the 	 newsPaper)
+	-A writer can sign in to his account to be able to add or edit the stories.
+	-A writer cannot sign up for a new account (so this is like an admin account for the newsPaper).
 	-writer Credentials:
- 	    user name: omar.sami@shakacode
-	 	  Password: shakacode
+ 	    *user name: omar.sami@shakacode
+	 	  *Password: shakacode
 
 	-now in “/stories” you can:
-		-Add a new story
-		-Edit or Delete an existing story
+		-Add a new story.
+		-Edit or Delete an existing story.
 
 
 
@@ -81,18 +80,19 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
 
 ## Some of the projects steps and HighLights:
 
-	-added Devise
-	-added writer with Devise
-	-added story with scaffold
-	-added the category model
-	-made a couple of writer accounts
+	-added Devise.
+	-added writer with Devise.
+	-added story with scaffold.
+	-added the category model.
+	-made a couple of writer accounts.
+  
   -NO one can register a new writer, edited routes.rb:
 
 ![alt text](./projectPics/roots.rb-devise.PNG)
 
 
 
-	-added a before_action in StoriesController so only a writer can add, edit or delete a story
+	-added a before_action in StoriesController so only a writer can add, edit or delete a story.
 
 
 ![alt text](./projectPics/before_action.PNG)
@@ -109,32 +109,44 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
 
 
 
--added after_commit in story.rb model to trigger the story relay job
+-added after_commit in story.rb model to trigger the story relay job.
 
 ![alt text](./projectPics/afterCommit.PNG)
 
 
 
--added the stories folder in /client/app/bundles
--added and edited the components:
+* added the stories folder in /client/app/bundles
+
+* added and edited the components:
 		-Footer.jsx
+    
     -NavigationBar.jsx
+    
     -StoriesCount.jsx
+    
     -StoryScreen.jsx
+    
     -StoryList.jsx
+    
     -Story.jsx
 
 
--added and edited the containers:
+*added and edited the containers:
     -NavigationBarContainer.jsx
+    
     -RouterStoriesContainer.jsx
 
--added Layout.jsx
 
--In startup added:
+*added Layout.jsx
+
+*In startup added:
+
     -NavigationBarApp.jsx
+
     -ClientRouterApp.jsx
+
     -ServerRouterApp.jsx
+
     -serverRegistration.jsx (used to register the React components)
 
 
@@ -167,7 +179,7 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
 
 
 
--Edited config => environments => development.rb    to use amazon
+-Edited config => environments => development.rb to use amazon
 
 ![alt text](./projectPics/use-amazon.PNG)
 
@@ -197,6 +209,7 @@ Projects github: https://github.com/omar2432/NewsReactOnRails
 
 
 -Edited packs/server-bundle.js to enable server-side rendering 
+
 -Edited packs/client-bundle.js to enable client-side rendering 
 
 
